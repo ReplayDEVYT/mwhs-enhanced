@@ -3,3 +3,6 @@
 /errors.txt
 /traceback.txt
 /log.txt
+*.save
+/game/saves
+progressive_download.txt
