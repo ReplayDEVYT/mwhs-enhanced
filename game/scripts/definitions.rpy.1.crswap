@@ -1,0 +1,1369 @@
+#----Music----
+define introtextmusic = "music/mus_introtext.ogg"
+define NariScary = "music/mus_nariscary2.ogg"
+define NariScaryPlus = "music/mus_nariscary3.ogg"
+define NariScaryAhh = "music/mus_nariscary1.ogg"
+define moochishop = "music/mus_mochishop.ogg"
+define menumusic = "music/mus_menu.ogg"
+define intromusic = "music/mus_intro.ogg"
+define toointensebeat = "music/mus_toointensebeat.ogg"
+define toointensebeat_rude = "music/mus_toointensebeat_2.ogg"
+define endmusic = "music/mus_notefall.ogg"
+define happymeta = "music/mus_happymeta.ogg"
+define happymetastupid = "music/mus_happymetastupid.ogg"
+define naristorytime = "music/mus_naristorytime.ogg"
+define hopeboogie = "music/mus_hopeboogie.ogg"
+define dancingmusic0 = "music/mus_dance0.ogg"
+define dancingmusic1 = "music/mus_dance1.ogg"
+define dancingmusic2 = "music/mus_dance2.ogg"
+define dancingmusic3 = "music/mus_dance3.ogg"
+define dancingmusic4 = "music/mus_dance4.ogg"
+define dancingmusic5 = "music/mus_dance5.ogg"
+define dancingmusic6 = "music/mus_dance6.ogg"
+define dancingmusic7 = "music/mus_dance7.ogg"
+define dancingmusicfinal = "music/mus_danceFinal.ogg"
+define dancingmusicfinalloop = "music/mus_danceFinalLoop.ogg"
+define goodbyemini = "music/mus_goodbyemini.ogg"
+define aspengrillsu = "music/mus_aspengrillsu.ogg"
+define narigrillsu = "music/mus_narigrillsu.ogg"
+define confession = "music/mus_confession.ogg"
+define chrisend = "music/mus_chrisend.ogg"
+define naristorytime2 = "music/mus_naristorytime2.ogg"
+define naristorytime2_donbuyit = "music/mus_naristorytimedonbuyit.ogg"
+define dontletgo = "music/mus_dontletgo.ogg"
+define immortality = "music/mus_immortality.ogg"
+define intromusicfinal_first = "music/mus_introlast_first.ogg"
+define intromusicfinal_loop = "music/mus_introlast_loop.ogg"
+define noise = "music/mus_noise.ogg"
+define loadmusic = "music/mus_metaload.ogg"
+define metaend0 = "music/mus_metaend0.ogg"
+define metaend1 = "music/mus_metaend1.ogg"
+define metaend2 = "music/mus_metaend2.ogg"
+define metaend3 = "music/mus_metaend3.ogg"
+define metaend4 = "music/mus_metaend4.ogg"
+define metaend5 = "music/mus_metaend5.ogg"
+define metaend6 = "music/mus_metaend6.ogg"
+define metaend7 = "music/mus_metaend7.ogg"
+define goodbye = "music/mus_goodbye.ogg"
+
+#----SFX---
+define bootsfx = "music/sfx_boot.ogg"
+define impact = "music/sfx_impact.ogg"
+define birds = "music/sfx_birds.ogg"
+define clothhit = "music/sfx_clothimpact.ogg"
+define steps = "music/sfx_steps.ogg"
+define fallhit = "music/sfx_fallimpact.ogg"
+define endboom = "music/sfx_endboom.ogg"
+define MARKEDONE = "music/MARKEDONE.mp3"
+
+#536f6d65 206f6620 74686573 65207469 746c6573 20617265 2074726f 75626c69 6e672e2e 2e
+
+init python:
+    renpy.music.register_channel("multi0", mixer="music", loop=True)
+    renpy.music.register_channel("multi1", mixer="music", loop=True)
+    renpy.music.register_channel("multi2", mixer="music", loop=True)
+    renpy.music.register_channel("multi3", mixer="music", loop=True)
+    renpy.music.register_channel("multi4", mixer="music", loop=True)
+    renpy.music.register_channel("multi5", mixer="music", loop=True)
+    renpy.music.register_channel("multi6", mixer="music", loop=True)
+    renpy.music.register_channel("multi7", mixer="music", loop=True)
+
+#----Images----
+image black = "#000000"
+image white = "#ffffff"
+
+image ctc = "gui/ctc.png"
+
+image blueworld = "backgrounds/bgblueworld.png"
+image bgblue = "backgrounds/bgblue.png"
+image bg school = "backgrounds/school.png"
+image bg school_flipped = "backgrounds/school_flipped.png"
+image bg school notree = "backgrounds/school_notree.png"
+image tree = "backgrounds/school_tree.png"
+image bg mochi = "backgrounds/epicmochistones.png"
+image bgendnoise = "backgrounds/bgendnoise.png"
+image yellowstreaks = "backgrounds/yellowstreaks.png"
+
+#Menu
+image notfungameslogo = "mainmenu/NotFunGamesLogo.png"
+image logo_miz = "logo/logo_miz.png"
+
+image menu_stripes_bw = "mainmenu/MenuBackgroundBW1930.png"
+image menu_stripes_color = "mainmenu/MetaBackground.png"# "mainmenu/MenuBackgroundCOLOR1930.png"
+image menuicons_Aspen = "icons/aspenicon.png"
+image menuicons_Chris = "icons/chrisicon.png"
+image menuicons_Isadora = "icons/isadoraicon.png"
+image menuicons_Hope = "icons/hopeicon.png"
+image menuicons_Nari = "icons/nariicon.png"
+
+image menulogo_main = "mainmenu/MenuLogoMain.png"
+image menulogo_demo = "mainmenu/MenuLogoDemo.png"
+
+image logo1_bg = "logo/logo1_bg.png"
+image logo2_lines = "logo/logo2_lines.png"
+image logo3_metaware = "logo/logo3_metaware.png"
+image logo4_me = "logo/logo4_me.png"
+image logo5_highschool = "logo/logo5_highschool.png"
+image logo6_glitch = "logo/logo6_glitch.png"
+image logo7_demo = "logo/logo7_demo.png"
+image logo_main = "logo/logo_main.png"
+image logo_full = "logo/logo_full.png"
+
+image note_front = "other/note_front.png"
+image note_back = "other/note_back.png"
+image note_falling = "other/note_falling.png"
+
+image logosolo:
+    "logo_full"
+
+image dancebg1 = "backgrounds/dancebg1.png"
+image dancebg2 = "backgrounds/dancebg2.png"
+image dancebg3 = "backgrounds/dancebg3.png"
+image dancebg4 = "backgrounds/dancebg4.png"
+image dancebg5 = "backgrounds/dancebg5.png"
+image dancebg6 = "backgrounds/dancebg6.png"
+image stickerbg = "backgrounds/stickerbg.png"
+
+image brightcolornoise = "backgrounds/brightcolornoise.png"
+image eyesclosedalpha = "other/tr_eyes.png"
+image hopemouth = "characters/hope/h_mouth_derp.png"
+
+##memories
+
+image mem01 = "memoryshots/memorypic01.png"
+image mem02 = "memoryshots/memorypic02.png"
+image mem03 = "memoryshots/memorypic03.png"
+image mem04 = "memoryshots/memorypic04.png"
+image mem05 = "memoryshots/memorypic05.png"
+image mem06 = "memoryshots/memorypic06.png"
+image mem07 = "memoryshots/memorypic07.png"
+image mem08 = "memoryshots/memorypic08.png"
+image mem09 = "memoryshots/memorypic09.png"
+image mem10 = "memoryshots/memorypic10.png"
+image mem11 = "memoryshots/memorypic11.png"
+image mem12 = "memoryshots/memorypic12.png"
+image mem13 = "memoryshots/memorypic13.png"
+image mem14 = "memoryshots/memorypic14.png"
+image mem15 = "memoryshots/memorypic15.png"
+image mem16 = "memoryshots/memorypic16.png"
+image mem17 = "memoryshots/memorypic17.png"
+image mem18 = "memoryshots/memorypic18.png"
+image mem19 = "memoryshots/memorypic19.png"
+image mem20 = "memoryshots/memorypic20.png"
+image mem21 = "memoryshots/memorypic21.png"
+image mem22 = "memoryshots/memorypic22.png"
+image mem23 = "memoryshots/memorypic23.png"
+image mem24 = "memoryshots/memorypic24.png"
+image mem25 = "memoryshots/memorypic25.png"
+image mem26 = "memoryshots/memorypic26.png"
+image mem27 = "memoryshots/memorypic27.png"
+image mem28 = "memoryshots/memorypic28.png"
+
+#41726520 6d656d6f 72696573 2073746f 72656420 61732069 6d616765 733f2020 57687920 646f6573 20746865 2067616d 6520646f 20746869 733f
+
+##Our Wonderful Characters
+
+#48652074 68696e6b 73207765 27726520 22776f6e 64657266 756c222e 2e2e6865 682e
+
+layeredimage c:
+    always:
+        "c_body_standard"
+
+    group arms:
+        attribute standard default
+        attribute surprised
+        attribute fists
+    
+    group mouth: 
+        attribute ahh
+        attribute angry
+        attribute derp
+        attribute disappoint 
+        attribute ehh 
+        attribute inv
+        attribute happy
+        attribute laugh
+        attribute line
+        attribute long
+        attribute longbig
+        attribute mad
+        attribute morty
+        attribute ohh
+        attribute ooo
+        attribute open
+        attribute owo
+        attribute pout
+        attribute sad
+        attribute sicko
+        attribute smile
+        attribute smirk
+        attribute mochi:
+            "other/mochi_mouth.png"
+
+    group extrasweat:
+        attribute sweat
+
+    group extrablush:
+        attribute blush
+
+
+layeredimage c think:
+    always:
+        'c_body_think'
+
+layeredimage c defeated:
+    always:
+        'c_body_defeated'
+
+    group mouth:
+        attribute closed "c_mouth_defeatclosed" default
+        attribute open "c_mouth_defeatopen"
+
+
+layeredimage c dance:
+    always:
+        "chrisdance"
+
+    group mouth:
+        attribute open "chrisdance_open"
+        attribute closed "chrisdance_closed" default
+
+
+###dance time
+
+define dancebeat = 60.0/132.0 #It's actually 132 but lag
+define dancebeat_faster = 60.0/136.0 #It's actually 132 but lag
+define dancebeat_chris = 60.0/164.0
+
+image chrisdance:
+    "c_body_dance2"
+    dancebeat_chris/1.3
+    "c_body_dance3"
+    dancebeat_chris/3.0
+    "c_body_dance4"
+    dancebeat_chris/1.3
+    "c_body_dance1"
+    dancebeat_chris/3.0
+    repeat
+
+image chrisdance_open:
+    "c_mouth_dance2_open"
+    dancebeat_chris/1.3
+    "c_mouth_dance3_open"
+    dancebeat_chris/3.0
+    "c_mouth_dance4_open"
+    dancebeat_chris/1.3
+    "c_mouth_dance1_open"
+    dancebeat_chris/3.0
+    repeat
+
+image chrisdance_closed:
+    "c_mouth_dance2_closed"
+    dancebeat_chris/1.3
+    "c_mouth_dance3_closed"
+    dancebeat_chris/3.0
+    "c_mouth_dance4_closed"
+    dancebeat_chris/1.3
+    "c_mouth_dance1_closed"
+    dancebeat_chris/3.0
+    repeat
+    
+image c sticker:
+    DynamicDisplayable(stickerdance, file="characters/chris/c_body_dance2_fill.png")
+    dancebeat_chris/1.3
+    DynamicDisplayable(stickerdance, file="characters/chris/c_body_dance3_fill.png")
+    dancebeat_chris/3.0
+    DynamicDisplayable(stickerdance, file="characters/chris/c_body_dance4_fill.png")
+    dancebeat_chris/1.3
+    DynamicDisplayable(stickerdance, file="characters/chris/c_body_dance1_fill.png")
+    dancebeat_chris/3.0
+    repeat 
+
+layeredimage a:
+    always:
+        'a_body_standard'
+
+    group arms:
+        attribute standard default
+        attribute crossed
+        attribute think
+    
+    group mouth: 
+        attribute ahh
+        attribute angry
+        attribute disappoint 
+        attribute ehh 
+        attribute happy
+        attribute inv
+        attribute laugh
+        attribute line
+        attribute long
+        attribute longbig
+        attribute mad
+        attribute morty
+        attribute ohh
+        attribute ooh
+        attribute open
+        attribute pout
+        attribute sad
+        attribute sicko
+        attribute smile default
+        attribute smirk
+        attribute wah
+
+    group extrasweat:
+        attribute sweat
+
+    group extrablush:
+        attribute blush
+
+    group extramochi:
+        attribute mochi:
+            "other/mochi_aspen.png"
+        attribute mochieaten:
+            "other/mochi_aspen_eaten.png"
+
+layeredimage a proclaim:
+    always:
+        "a_body_proclaim"
+
+
+layeredimage a dance:
+    always:
+        "aspendance"
+
+    group mouth:
+        attribute open "aspendance_open"
+        attribute closed "aspendance_closed" default
+
+    group extra:
+        attribute maracas "aspendance_maracas"
+
+image aspendance:
+    "a_body_danceleft"
+    dancebeat
+    "a_body_danceright"
+    dancebeat
+    repeat
+
+image aspendance_open:
+    "a_mouth_danceleft_open"
+    dancebeat
+    "a_mouth_danceright_open"
+    dancebeat
+    repeat
+
+image aspendance_closed:
+    "a_mouth_danceleft_closed"
+    dancebeat
+    "a_mouth_danceright_closed"
+    dancebeat
+    repeat
+
+image aspendance_maracas:
+    "a_extra_maracas_left"
+    dancebeat
+    "a_extra_maracas_right"
+    dancebeat
+    repeat
+
+image a sticker:
+    DynamicDisplayable(stickerdance, file="characters/aspen/a_body_danceleft_fill.png")
+    dancebeat
+    DynamicDisplayable(stickerdance, file="characters/aspen/a_body_danceright_fill.png")
+    dancebeat
+    repeat
+
+layeredimage i:
+    always:
+        "i_body_standard"
+
+    group arms:
+        attribute standard default
+        attribute fists
+        attribute oohh
+        attribute crossed
+    
+    group mouth: 
+        attribute ahh
+        attribute angry
+        attribute disappoint 
+        attribute ehh 
+        attribute happy
+        attribute inv
+        attribute laugh
+        attribute line
+        attribute long
+        attribute longbig
+        attribute mad
+        attribute morty
+        attribute ohh
+        attribute ooo
+        attribute open
+        attribute pout
+        attribute sad
+        attribute sicko
+        attribute smile default
+        attribute smirk
+        attribute wah
+
+    group extrasweat:
+        attribute sweat
+
+    group extrablush:
+        attribute blush
+
+    group extramochi:
+        attribute mochi:
+            "other/mochi_lh.png"
+        attribute mochieaten:
+            "other/mochi_lh_eaten.png"
+
+layeredimage i omg:
+    always:
+        "i_body_omg"
+
+layeredimage i arg:
+    always:
+        "i_body_arg"
+
+layeredimage i krying:
+    always:
+        "i_body_krying"
+
+    group mouth:
+        attribute open:
+            "i_mouth_krying_mouthopen"
+        attribute closed:
+            "i_mouth_krying_mouthclosed" default
+
+layeredimage i dance:
+    always:
+        "isadoradance"
+    
+    group mouth:
+        attribute open "isadoradance_open" default
+        attribute closed "isadoradance_closed"
+
+image isadoradance:
+    "i_body_dancefront"
+    dancebeat/2.0
+    "i_body_danceleft"
+    dancebeat/2.0
+    "i_body_dancefront"
+    dancebeat/2.0
+    "i_body_danceright"
+    dancebeat/2.0
+    repeat
+
+image isadoradance_open:
+    "i_mouth_dancefront_open"
+    dancebeat/2.0
+    "i_mouth_danceleft_open"
+    dancebeat/2.0
+    "i_mouth_dancefront_open"
+    dancebeat/2.0
+    "i_mouth_danceright_open"
+    dancebeat/2.0
+    repeat
+
+image isadoradance_closed:
+    "i_mouth_dancefront_closed"
+    dancebeat/2.0
+    "i_mouth_danceleft_closed"
+    dancebeat/2.0
+    "i_mouth_dancefront_closed"
+    dancebeat/2.0
+    "i_mouth_danceright_closed"
+    dancebeat/2.0
+    repeat
+
+image i sticker:
+    DynamicDisplayable(stickerdance, file="characters/isadora/i_body_dancefront_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/isadora/i_body_danceleft_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/isadora/i_body_dancefront_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/isadora/i_body_danceright_fill.png")
+    dancebeat/2.0
+    repeat
+
+layeredimage h:
+    always:
+        "h_body_standard"
+
+    group mouth: 
+        attribute ahh
+        attribute angry
+        attribute derp
+        attribute disappoint 
+        attribute ehh
+        attribute grin
+        attribute happy 
+        attribute inv
+        attribute laugh
+        attribute line
+        attribute long
+        attribute longbig
+        attribute mad
+        attribute morty
+        attribute ohh
+        attribute ooo
+        attribute open
+        attribute owo
+        attribute pout
+        attribute sad
+        attribute sicko
+        attribute smile default
+        attribute smirk
+        attribute tongue
+        #Special
+        attribute nom
+
+    group extrasweat:
+        attribute sweat
+
+    group extrablush:
+        attribute blush
+
+    group extramochi:
+        attribute mochi:
+            "other/mochi_lh.png"
+        attribute mochieaten:
+            "other/mochi_lh_eaten.png"
+
+layeredimage h owopose:
+    always:
+        "h_body_owo"
+
+layeredimage h dance:
+    always:
+        "hopedance"
+
+    group mouth:
+        attribute open "hopedance_open"
+        attribute closed "hopedance_closed" default
+
+image hopedance:
+    "h_body_dancefront"
+    dancebeat/2.0
+    "h_body_danceleft"
+    dancebeat/2.0
+    "h_body_dancefront"
+    dancebeat/2.0
+    "h_body_danceright"
+    dancebeat/2.0
+    repeat
+
+image hopedance_open:
+    "h_mouth_dancefront_open"
+    dancebeat/2.0
+    "h_mouth_danceleft_open"
+    dancebeat/2.0
+    "h_mouth_dancefront_open"
+    dancebeat/2.0
+    "h_mouth_danceright_open"
+    dancebeat/2.0
+    repeat
+
+image hopedance_closed:
+    "h_mouth_dancefront_closed"
+    dancebeat/2.0
+    "h_mouth_danceleft_closed"
+    dancebeat/2.0
+    "h_mouth_dancefront_closed"
+    dancebeat/2.0
+    "h_mouth_danceright_closed"
+    dancebeat/2.0
+    repeat
+
+image h sticker:
+    DynamicDisplayable(stickerdance, file="characters/hope/h_body_dancefront_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/hope/h_body_danceleft_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/hope/h_body_dancefront_fill.png")
+    dancebeat/2.0
+    DynamicDisplayable(stickerdance, file="characters/hope/h_body_danceright_fill.png")
+    dancebeat/2.0
+    repeat
+
+
+
+layeredimage n:
+    always:
+        "n_body_standard"
+    
+    group mouth:
+        attribute ahh
+        attribute derp
+        attribute disappoint
+        attribute happy
+        attribute ehh
+        attribute laugh
+        attribute inv
+        attribute derp
+        attribute happ
+        attribute laugh
+        attribute line default
+        attribute long
+        attribute longbig
+        attribute open
+        attribute owo
+        attribute sad
+        attribute sicko
+        attribute smile
+        attribute smirk
+
+    group extrasweat:
+        attribute sweat
+
+    group extramochi:
+        attribute mochi:
+            "other/mochi_lh.png"
+        attribute mochieaten:
+            "other/mochi_lh_eaten.png"
+
+layeredimage n dance:
+    always:
+        "naridance"
+
+image naridance:
+    "n_body_danceleft"
+    dancebeat
+    "n_body_danceright"
+    dancebeat
+    repeat
+
+image n sticker:
+    DynamicDisplayable(stickerdance, file="characters/nari/n_body_danceleft_fill.png")
+    dancebeat
+    DynamicDisplayable(stickerdance, file="characters/nari/n_body_danceright_fill.png")
+    dancebeat
+    repeat
+
+####STICKER STUFF
+
+init python:
+    redtint = 160/256.0
+    bluetint = 110/256.0
+    greentint = 231/256.0
+
+    def stickerdance(st, at, file):
+        return im.MatrixColor(file, im.matrix.tint(redtint, bluetint, greentint) * im.matrix.opacity(0.75)), 0.1
+
+
+#57686174 20746865 2068656c 6c206973 20737469 636b6572 20737475 6666
+
+
+
+
+
+
+###init defininitions
+
+init python:
+
+    ##blips
+    renpy.music.register_channel("blips")
+    
+
+    # def blip_vox(event, char, interact=True, **kwargs):
+    #     renpy.music.set_volume(0.7, channel='blips')
+    #     if event == "show_done":
+    #         renpy.sound.queue("voice/blip_" + char + ".ogg", loop=True, channel="blips")
+    #     elif event == "slow_done":
+    #         renpy.sound.stop(fadeout=0.1, channel="blips", tight=True)
+    #         return
+
+
+    blip_dict = {
+        "c": ["voice/blip_c01.ogg", "voice/blip_c02.ogg", "voice/blip_c03.ogg", "voice/blip_c04.ogg", "voice/blip_c05.ogg", "voice/blip_c06.ogg", "voice/blip_c07.ogg", "voice/blip_c08.ogg", "voice/blip_c09.ogg", "voice/blip_c10.ogg", "voice/blip_c11.ogg", "voice/blip_c12.ogg"],
+        "i": ["voice/blip_i01.ogg", "voice/blip_i02.ogg", "voice/blip_i03.ogg", "voice/blip_i04.ogg", "voice/blip_i05.ogg", "voice/blip_i06.ogg", "voice/blip_i07.ogg", "voice/blip_i08.ogg", "voice/blip_i09.ogg", "voice/blip_i10.ogg", "voice/blip_i11.ogg", "voice/blip_i12.ogg"],
+        "a": ["voice/blip_a01.ogg", "voice/blip_a02.ogg", "voice/blip_a03.ogg", "voice/blip_a04.ogg", "voice/blip_a05.ogg", "voice/blip_a06.ogg", "voice/blip_a07.ogg", "voice/blip_a08.ogg", "voice/blip_a09.ogg", "voice/blip_a10.ogg", "voice/blip_a11.ogg", "voice/blip_a12.ogg"],
+        "h": ["voice/blip_h01.ogg", "voice/blip_h02.ogg", "voice/blip_h03.ogg", "voice/blip_h04.ogg", "voice/blip_h05.ogg", "voice/blip_h06.ogg", "voice/blip_h07.ogg", "voice/blip_h08.ogg", "voice/blip_h09.ogg", "voice/blip_h10.ogg", "voice/blip_h11.ogg", "voice/blip_h12.ogg"],
+        "n": ["voice/blip_n01.ogg", "voice/blip_n02.ogg", "voice/blip_n03.ogg", "voice/blip_n04.ogg", "voice/blip_n05.ogg", "voice/blip_n06.ogg", "voice/blip_n07.ogg", "voice/blip_n08.ogg", "voice/blip_n09.ogg", "voice/blip_n10.ogg", "voice/blip_n11.ogg", "voice/blip_n12.ogg"],
+        "ca": ["voice/blip_ca01.ogg", "voice/blip_ca02.ogg", "voice/blip_ca03.ogg", "voice/blip_ca04.ogg", "voice/blip_ca05.ogg", "voice/blip_ca06.ogg", "voice/blip_ca07.ogg", "voice/blip_ca08.ogg", "voice/blip_ca09.ogg", "voice/blip_ca10.ogg", "voice/blip_ca11.ogg", "voice/blip_ca12.ogg"],
+        "iw": ["voice/blip_iw01.ogg", "voice/blip_iw02.ogg", "voice/blip_iw03.ogg", "voice/blip_iw04.ogg", "voice/blip_iw05.ogg", "voice/blip_iw06.ogg", "voice/blip_iw07.ogg", "voice/blip_iw08.ogg", "voice/blip_iw09.ogg", "voice/blip_iw10.ogg", "voice/blip_iw11.ogg", "voice/blip_iw12.ogg"],
+        "ap": ["voice/blip_ap01.ogg", "voice/blip_ap02.ogg", "voice/blip_ap03.ogg", "voice/blip_ap04.ogg", "voice/blip_ap05.ogg", "voice/blip_ap06.ogg", "voice/blip_ap07.ogg", "voice/blip_ap08.ogg", "voice/blip_ap09.ogg", "voice/blip_ap10.ogg", "voice/blip_ap11.ogg", "voice/blip_ap12.ogg"],
+        "ns": ["voice/blip_ns01.ogg"]
+    }
+
+
+    def blip_vox_variance(event, char, interact=True, **kwargs):
+        renpy.music.set_volume(1.0, channel='blips')
+        blip_array_reference = blip_dict[str(char)]
+        if event == "slow_done":
+            renpy.sound.stop(channel="blips", fadeout=0.05)
+        elif event == "show":
+            #choose random
+            blip_arrap_to_play = []
+            while len(blip_arrap_to_play) < 60:
+                blip_arrap_to_play.append(blip_array_reference[renpy.random.randint(0, len(blip_array_reference) - 1)])
+            renpy.sound.queue(blip_arrap_to_play, channel="blips")
+        else:
+            pass
+
+    def shakeitupandmakeitfizz(trans, st, at):
+        trans.xpos = renpy.random.randint(-960, 0)
+        trans.ypos = renpy.random.randint(-340, 0)
+        return fizzRate #rate of fizz
+
+
+    def delete_all_saves():
+        for savegame in renpy.list_saved_games(fast=True):
+            renpy.unlink_save(savegame)
+
+    
+    if not persistent.completed_endings:
+        persistent.completed_endings = [] #656e6469 6e677320 61726520 73746f72 65643f
+
+    def EndingComplete(endingstring): 
+        if endingstring not in persistent.completed_endings:
+            persistent.completed_endings.append(endingstring)
+
+    def IsTimeForFinalEnding(): #57686174 20697320 74686973 3f3f3f3f 3f3f3f
+        if persistent.IsForceNormalGameplay:
+            return False
+        if persistent.IsForceEndmode:
+            return True
+        endingscomplete = persistent.completed_endings and len(persistent.completed_endings) >= (num_of_endings) #46696e61 6c20656e 64696e67 20697320 74726967 67657265 64207768 656e2061 6c6c2065 6e64696e 67732061 72652070 6c617965 642e2e2e
+        return endingscomplete
+
+    def getrandomfloat_range(min, max): #524e473f 20576879 3f
+        return (renpy.random.random() * (max-min)) + min 
+
+###-----------text files
+
+
+    def IsName(name):
+        if str(name).lower() not in NAMES:
+            return False
+        return True
+
+    def IsBadWord(word):
+        wordarray = word.split(" ")
+        for w in wordarray:
+            if str(w).lower() in BADWORDS:
+                return True
+        return False
+
+    if not persistent.cutelist:
+        persistent.cutelist = [] #4f682067 6f642049 276d206e 6f742073 75726520 49207761 6e742074 6f206b6e 6f772077 68617420 74686973 206973
+
+    import datetime
+
+    def hardpause(pause):
+        renpy.pause(delay=pause, hard=True)
+
+    first_move = True
+
+
+    global memoryDict
+    memoryDict = {}
+
+    def randomMemoryPicString():
+        import random
+        picnum = random.randint(1, 28)
+        picnum_string = "{:02d}".format(picnum)
+        d = "memoryshots/memorypic" + picnum_string + ".jpeg"
+        return d
+
+
+
+image randomMem = randomMemoryPicString()
+
+default memoryalpha = 1.0
+
+
+image memoryMirage:
+    contains:
+        randomMemoryPicString()
+        alpha 0
+        pause 1
+        easeout 5 alpha 0.13
+        pause (getrandomfloat_range(3.0, 6.0))
+        easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+        repeat
+    contains:
+        randomMemoryPicString()
+        alpha 0
+        pause 1.5
+        easeout 10 alpha 0.13
+        pause (getrandomfloat_range(3.0, 6.0))
+        easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+        repeat
+    contains:
+        randomMemoryPicString()
+        alpha 0
+        pause 1.2
+        easeout 8 alpha 0.13
+        pause (getrandomfloat_range(3.0, 6.0))
+        easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+        repeat
+    contains:
+        randomMemoryPicString()
+        alpha 0
+        pause 3
+        easeout 15 alpha 0.13
+        pause (getrandomfloat_range(3.0, 6.0))
+        easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+        repeat
+    # contains:
+    #     randomMemoryPicString()
+    #     alpha 0
+    #     pause 2.5
+    #     easeout 12 alpha 0.1
+    #     pause (getrandomfloat_range(3.0, 6.0))
+    #     easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+    #     repeat
+    # contains:
+    #     randomMemoryPicString()
+    #     alpha 0
+    #     pause 4
+    #     easeout 6 alpha 0.1
+    #     pause (getrandomfloat_range(3.0, 6.0))
+    #     easein (getrandomfloat_range(5.0, 10.0)) alpha 0.0
+    #     repeat
+    on hide:
+        easein 6.0 alpha 0.0
+
+
+
+#49206361 6e277420 6d616b65 2073656e 7365206f 6620616e 79206f66 20746869 73
+
+define chris_color = "#d3353e"
+define isadora_color = "#995637"
+define aspen_color = "#ecc64c"
+define hope_color = "#843cab"
+define nari_color = "#4e7343"
+
+#4d617463 68657320 6f757220 68616972 20636f6c 6f72
+
+# define antialias = True
+define black_outline_thickness = 6
+define color_outline_thickness = 7
+
+define config.use_drawable_resolution = False
+
+##Define Characters
+define cq = Character("?????", color=chris_color, what_outlines=[(color_outline_thickness, chris_color, 0, 0),(black_outline_thickness, "#000", 0, 0)], who_outlines=[(5, "#222", 0, 0)], callback=blip_vox_variance, cb_char="c", what_prefix="{cps=60}", what_suffix="{/cps}")
+define iq = Character("????????", color=isadora_color, what_outlines=[(color_outline_thickness, isadora_color, 0, 0),(black_outline_thickness, "#000", 0, 0)], who_outlines=[(5, "#222", 0, 0)], callback=blip_vox_variance, cb_char="i", what_prefix="{cps=80}", what_suffix="{/cps}")
+define aq = Character("????", color=aspen_color, what_outlines=[(color_outline_thickness, aspen_color, 0, 0),(black_outline_thickness, "#000", 0, 0)], who_outlines=[(5, "#222", 0, 0)], callback=blip_vox_variance, cb_char="a", what_prefix="{cps=70}", what_suffix="{/cps}")
+define hq = Character("???", color=hope_color, what_outlines=[(color_outline_thickness, hope_color, 0, 0),(black_outline_thickness, "#000", 0, 0)], who_outlines=[(5, "#222", 0, 0)], callback=blip_vox_variance, cb_char="h", what_prefix="{cps=50}", what_suffix="{/cps}")
+define nq = Character("???", color=nari_color, what_outlines=[(color_outline_thickness, nari_color, 0, 0),(black_outline_thickness, "#000", 0, 0)], who_outlines=[(5, "#222", 0, 0)], callback=blip_vox_variance, cb_char="n", what_prefix="{cps=35}", what_suffix="{/cps}")
+
+define iqw = Character(kind=iq, cb_char="iw", what_prefix="{cps=200}{shader=jitter:u__jitter=1.0, 1.0}", what_suffix="{/shader}{/cps}")
+define izq = Character("IZZY?", kind=iq)
+define izqw = Character("IZZY?", kind=iq, cb_char="iw")
+define aqa = Character("ASPEN?", kind=aq)
+
+define c = Character("CHRIS", kind=cq)
+define i = Character("ISADORA", kind=iq)
+define a = Character("ASPEN", kind=aq)
+define h = Character("HOPE", kind=hq)
+define n = Character("NARI", kind=nq)
+
+define cs = Character("CHRIS", kind=cq, what_prefix="{cps=45}", what_suffix="{/cps}")
+
+define ca = Character("CHRIS", kind=cq, cb_char="ca")
+define iw = Character("ISADORA", kind=iq, cb_char="iw", what_prefix="{cps=200}{shader=jitter:u__jitter=1.0, 1.0}", what_suffix="{/shader}{/cps}")
+define ap = Character("ASPEN", kind=aq, cb_char="ap")
+define ns =  Character("NARI", kind=nq, cb_char="ns")
+
+
+define q = Character(kind=nvl)
+default qspeed = 30
+
+define dissolve_q = Dissolve(5.0)
+define pause2 = Pause(2.0)
+
+
+##Positioning---------------------------------
+
+define global_yanchor = 30
+define global_zoom = 0.60
+
+define sprite_width = 1035
+define sprite_height = 2213
+
+define w_crop = 0 #Value in Sparkbag's photoshop file
+
+#41726520 77652063 72656174 65642069 6e207068 6f746f73 686f703f
+
+
+transform move(x=0.5, speed=0.2, y_offset=0, z=global_zoom, ya=global_yanchor):
+    crop (w_crop, 0, sprite_width-w_crop, sprite_height)
+    zoom z yanchor ya
+    parallel:
+        easein speed xalign x
+    parallel:
+        easein speed/2.0 yoffset -y_offset
+        easeout speed/2.0 yoffset 0
+
+transform enterleft(x=0.5, speed=0.2, y_offset=0):
+    xalign -1.5
+    move(x, speed, y_offset)
+
+transform enterright(x=0.5, speed=0.2, y_offset=0, z=global_zoom, ya=global_yanchor):
+    xalign 1.5
+    move(x, speed, y_offset, z, ya)
+
+transform hop(speed=0.2, y_offset=30):
+    easein speed/2.0 yoffset -y_offset
+    easeout speed/2.0 yoffset 0
+
+transform shake(amount=10):
+    linear 0.05 xoffset amount/2
+    linear 0.05 xoffset -amount/2
+    repeat
+
+define defaultdance_x = 20
+
+transform dance(x=defaultdance_x):
+    # ease 0.75 xoffset x/2.0
+    block:
+        ease 1.136 xoffset -x
+        ease 1.136 xoffset x
+        repeat
+
+
+transform fadein(speed=2.0, xmovefrom=0.35):
+    move(0.5, 0.0, 0, 0.9)
+    alpha 0.0
+    xalign xmovefrom
+    yalign 0.15
+    parallel:
+        easein_quint speed xalign 0.5
+    parallel:
+        easein_expo speed alpha 1.0
+
+
+transform fadeout(speed=2.0, xmoveto=0.65):
+    parallel:
+        easein_quint speed xalign 0.65
+    parallel:
+        easein_expo speed alpha 0.0
+
+transform fadeup(speed=4.0, xmoveto=0.65):
+    parallel:
+        easein speed alpha 0.2
+    parallel:
+        easeout 60 xalign 1.8
+
+        
+
+
+transform note_falling():
+    zoom 0.8
+    xalign 0.7
+    yalign -0.3
+    parallel:
+        ease 6.0 yalign 1.4
+    parallel:
+        ease 1.5 xalign 0.3
+        ease 1.5 xalign 0.8
+        ease 1.5 xalign 0.2
+        ease 1.5 xalign 0.7
+    parallel:
+        ease 1.5 rotate 10
+        ease 1.5 rotate -10
+        repeat
+
+transform fadestoblack(time=10.0):
+    on hide:
+        alpha 1.0
+        linear time alpha 0.0
+
+transform place_school_bg:
+    xpos -defaultdance_x
+
+
+transform moveAround:
+    parallel:
+        ease_circ 0.5 xoffset 100
+        ease_circ 0.5 xoffset -100
+        repeat
+
+    parallel:
+        choice:
+            ease 0.8 yalign 0.0
+        choice:
+            ease 0.4 yalign 0.4
+        choice:
+            ease 0.5 yalign 0.7
+        choice:
+            ease 0.3 yalign 0.6
+        choice:
+            ease 0.4 yalign 0.4
+        choice:
+            ease 0.9 yalign 0.5
+        repeat
+    parallel:
+        choice:
+            ease 0.3 xalign 0.6
+        choice:
+            ease 0.5 xalign 0.1
+        choice:
+            ease 0.7 xalign 0.3
+        choice:
+            ease 0.7 xalign 0.5
+        choice:
+            ease 0.4 xalign 0.8
+        choice:
+            ease 0.5 xalign 0.7
+        repeat
+
+transform stop:
+    pass
+
+
+
+
+
+#49742073 65656d73 20686f77 20776520 61726520 73686f77 6e20746f 20746865 20706c61 79657220 69732061 6e206170 70726f78 696d6174 696f6e20 6f66206f 75722061 63747561 6c206d6f 76656d65 6e7473
+
+
+###-------End Stuff
+
+default fizzRate = 0.06
+default fizzAlpha = 0.7
+
+transform makeitfizz:
+    alpha fizzAlpha
+    function shakeitupandmakeitfizz
+
+#22536861 6b652069 74207570 20616e64 206d616b 65206974 2066697a 7a222072 65666572 656e6365 7320736f 6e672056 595a4545 20627920 6d757369 6369616e 20534f50 4849452e 204d6561 6e696e67 3f3f3f21 3f213f21 3f21
+
+
+
+##States-----------------------------
+
+
+####ENDINGS########
+
+default num_of_endings = 10
+
+if persistent.IsForceEndmode == None:
+    $persistent.IsForceEndmode = False
+
+if persistent.IsForceNormalGameplay == None:
+    $persistent.IsForceNormalGameplay = False
+
+#6f68206e 6f
+
+default ending_aspen_pissed = False
+###################
+
+##The tone the player addresses the characters
+## -1 = rude
+## 0 = unpredictable
+## 1 = polite
+default tone = 0
+
+##speed of Nari's scary text
+default nspeed = 20 #45786375 7365206d 653f2057 68656e20 68617665 20492062 65656e20 73636172 793f2041 70706172 656e746c 79204927 6d202232 30222073 63617279 3f
+
+#Labeled by string of first letter ("c", "a", etc)
+#False if no one is chosen
+default cute = False
+
+#If the player has a defalut given name (they choose not to give their name)
+default default_player_name = None
+default player_lowercase = None
+
+#If the player is married
+default married = None 
+#4f682067 65657a2c 20646f6e 27742074 656c6c20 6d652074 68657265 27732073 6f6d6520 6e617272 61746976 65207468 61742064 65616c73 20776974 6820696e 66696465 6c697479 2e2e2e
+
+#If the player says it's their first time playing
+default first_time = None
+
+#If mochi is stuck in chris's mouth
+default chris_mochi_mouth = False
+#4c4f4c20 77686174 3f3f3f3f
+
+#If you deny Aspen's request to run off and question you
+default aspen_pissed = False
+
+#If you ask about eyes early on
+default ask_about_eyes = False
+#6e6f2063 6c756520 77686174 20226579 65732220 617265
+
+#If hope tells the gang about her trick off camera
+default timetraveler = False
+#3f3f3f20 57686174 20747269 636b
+
+#On no Mochi route, player chooses somewhere to go (becomes string)
+default goget = None
+#6d6f6368 69206265 636f6d65 73207374 72696e67 3f204c69 6b652077 6f6f6c3f 204577
+
+#What the player chooses at the random bit in rude route
+default crazytalk1 = None
+default crazytalk2 = None
+
+##If the player goes beep bop boop in front of everyone
+##Why does this have to be a variable in this game oh my god
+default racist = False
+#556d2e20 4f6b6179 2e204920 776f6e64 65722077 68617420 77652772 6520696e 20666f72 2e
+
+##If player is dancing now
+default dancingnow = False
+
+###hope questions
+###when all false, progressises (if something else doesn't happen)
+default hope_questions_show = [True, True, True, True]
+#43726561 746f7220 69732061 20686f72 7269626c 65207370 656c6c65 7220636f 6e666972 6d65642e
+
+##check if all options have been picked
+init python:
+    def check_hope_questions(array):
+        b = False
+        for each in array:
+            b += each
+        return b
+
+##If hope gives you the nickname "Testial Face"
+default testical_face = False
+#446f2049 20657665 6e207761 6e742074 6f206b6e 6f772074 68652063 6f6e7465 78742066 6f722074 6869732e
+
+##strikes for being too slow when aspen drills you
+default strike_count = 0
+#53657875 616c3f
+
+##number of times you don't say anything to hope
+default nowordstrike = 0
+
+default player_name_is_a_name = None
+
+default hasShownEscapeMSG = False
+
+default say_u_played = None
+
+#secret thing
+default orangekid = False
+#68616861 68616861 20776861 743f3f3f 3f3f
+
+default mochi_players_idea = None
+
+default mochi_from_immortality = False
+
+$_skipping = True
+
+##(2025 Update)
+default player = "Player"
+
+##Pronouns-----------------------------
+
+define pronoun_he = ("he", "him", "his", "his", "he's", "hes")
+define Pronoun_he = ("He", "Him", "His", "His", "He's")
+
+define pronoun_she = ("she", "her", "her", "hers", "she's", "shes")
+define Pronoun_she = ("She", "Her", "Her", "Hers", "She's")
+
+define pronoun_they = ("they", "them", "their", "theirs", "they're", "theyre")
+define Pronoun_they = ("They", "Them", "Their", "Theirs", "They're")
+
+##(2025 Update)
+default pronoun = pronoun_he 
+default Pronoun = Pronoun_he 
+
+define is_conj_heshe = "is"
+define is_conj_they = "are"
+define verb_conj_heshe = "s"
+define verb_conj_they = ""
+define dont_conj_heshe = "doesn't"
+define dont_conj_they = "don't"
+
+init python:
+    if persistent.pronoun_list == None:
+        persistent.pronoun_list = []
+
+    def MostCommonPronoun():
+        he_sum = [persistent.pronoun_list.count("he"), pronoun_he]
+        she_sum = [persistent.pronoun_list.count("she"), pronoun_she]
+        they_sum = [persistent.pronoun_list.count("they"), pronoun_they]
+        return max([he_sum, she_sum, they_sum])[1]
+
+
+##-----------------------------
+
+
+
+
+##Beginning Quotes------------------------
+
+init python:
+    quote_bank = []
+
+    quote_bank.append([
+        "\"There is nothing easy about becoming conscious. {w}My own life was much easier before I knew about the deeper meaning of choice, the power of choice that accompanies taking responsibility.{/i}",
+        "Abdicating responsibility to an outside source can seem, at least for the moment, so much easier.",
+        "Once you know better, however, you can't get away with kidding yourself for long.\"",
+        "- Caroline Myss"
+    ])
+
+    quote_bank.append([
+        "\"If you would only switch on the light of awareness and observe yourself and everything around you throughout the day,{w} if you would see yourself reflected in the mirror of awareness the way you see your face reflected in a looking glass,{w} that is, accurately,{w} clearly,{w} exactly as it is without the slightest distortion or addition,{w} and if you observed this reflection without any judgement or condemnation,{w} you would experience all sorts of marvelous changes coming about you.",
+        "Only you will not be in control of those changes,{w} or be able to plan them in advance,{w} or decide how and when they are to take place.",
+        "CLEAR",
+        "It is this nonjudgemental awareness alone that heals and changes and makes one grow.",
+        "But in its own way and at its own time.\"",
+        "- Anthony DeMello"
+    ])
+
+    quote_bank.append([
+        "\"Through our senses the world appears.",
+        "Through our reactions we create delusions.",
+        "Without reactions the world becomes clear.\"",
+        "- Buddha"
+    ])
+
+    quote_bank.append([
+        "\"The greatest happiness is to know the source of unhappiness.\"",
+        "- Dostoyevsky"
+    ])
+
+    quote_bank.append([
+        "\"Spiritually speaking, everything that one wants, aspires to, and needs is ever-present, accessible here and now{w} - for those with eyes to see.\"",
+        "- Surya Das"
+    ])
+
+    quote_bank.append([
+        "\"There's a part of every living thing that wants to become itself,{w} the tadpole into the frog,{w} the chrysalis into the butterfly,{w} a damaged human being into a whole one.\"",
+        "- Ellen Bass"
+    ])
+
+    quote_bank.append([
+        "\"The ultimate gift of conscious life is a sense of the mystery that encompasses it.\"",
+        "- Lewis Mumford"
+    ])
+
+    quote_bank.append([
+        "\"There is nothing more worthwhile and more difficult than the fundamental human task of simply becoming human.\"",
+        "- Lewis Momford"
+    ])
+
+    quote_bank.append([
+        "\"When Michelangelo was asked how he created a piece of sculpture, he answered that the statue already existed within the marble...Michelangelo's job, as he saw it, was to get rid of the excess marble that surrounded God's creation.\"",
+        "- Marianne Williamson"
+    ])
+
+    quote_bank.append([
+        "\"He who cannot change the very fabric of his thought will never be able to change reality.\"",
+        "- Anwar Sadat"
+    ])
+
+
+    quote_bank.append([
+        "\"All we need to do is give up our habit of regarding as real that which is unreal.",
+        "...When we stop regarding the unreal as real, then reality alone will remain, and we will be that.\"",
+        "- Ramana Maharshi"
+    ])
+
+    quote_bank.append([
+        "\"If you can't say it,{w} point to it.\"",
+        "- Ludwig Wittgenstein"
+    ])
+
+    quote_bank.append([
+        "\"The problem, simply put, is that we cannot choose everything simultaneously.",
+        "So we live in danger of becoming paralyzed by indecision, terrified that every choice might be the wrong choice.\"",
+        "- Elizabeth Gilbert"
+    ])
+
+    quote_bank.append([
+        "\"If you limit your choice only to what seems possible or reasonable, you disconnect yourself from what you truly want, and all that is left is a compromise.\"",
+        "- Robert Fritz"
+    ])
+
+    quote_bank.append([
+        "\"Fiction is one of the few experiences where loneliness can be both confronted and relieved.",
+        "Drugs,{w} movies where stuff blows up,{w} loud parties{w} -- all these chase away loneliness by making me forget my name's Dave and I live in a one-by-one box of bone no other party can penetrate or know.",
+        "CLEAR",
+        "Fiction,{w} poetry,{w} music,{w} really deep serious sex,{w} and, in various ways, religion{w} -- these are places (for me) where loneliness is countenanced,{w} stared down,{w} transfigured,{w} treated.\"",
+        "- David Foster Wallace"
+    ])
+
+
+    quote_bank.append([
+        "\"It did what all ads are supposed to do:",
+        "Create an anxiety relievable by purchase.\"",
+        "- David Foster Wallace, Infinite Jest"
+    ])
+
+    quote_bank.append([
+        "\"There are these two young fish swimming along and they happen to meet an older fish swimming the other way, who nods at them and says:",
+        "\"Morning, boys. How's the water?\"",
+        "And the two young fish swim on for a bit,{w} and then eventually one of them looks over at the other and goes:",
+        "\"What the hell is water?\"",
+        "- David Foster Wallace"
+    ])
+
+    quote_bank.append([
+        "\"To be is to do{w} - Socrates",
+        "To do is to be{w} - Sartre",
+        "Do Be Do Be Do{w} - Sinatra\"",
+        "- Kurt Vonnegut"
+    ])
+
+    quote_bank.append([
+        "\"If your goal were to know love, a date would have a greater chance of success than a work of art.\"",
+        "- Joshua Fineberg"
+    ])
+
+    quote_bank.append([
+        "\"Some people use language as a mask.",
+        "And some want to create designed language that appears to reveal them but does not.",
+        "Yet from time to time we are betrayed by language,{w} if not the words themselves, in the rhythm with which we deliver our words.\"",
+        "- Anne D Smith"
+    ])
+
+    quote_bank.append([
+        "\"Some people use language as a mask.",
+        "And some want to create designed language that appears to reveal them but does not.",
+        "Yet from time to time we are betrayed by language,{w} if not the words themselves, in the rhythm with which we deliver our words.\"",
+        "- Anne D Smith"
+    ])
+
+    if not persistent.quote_bank_unseen:
+        persistent.quote_bank_unseen = quote_bank
+        persistent.quote_bank_seen = []
+        renpy.save_persistent()
+
+    #for ppl with persistent already
+    if not persistent.quote_bank_seen:
+        persistent.quote_bank_unseen = quote_bank
+        persistent.quote_bank_seen = []
+        renpy.save_persistent()
+
+
+#57686174 20746865 20686563 6b206973 20616c6c 206f6620 74686973 3f20536f 6d65206f 66206974 20697320 6b696e64 206f6620 696e7465 72657374 696e67
+
+##End Messages------------------------
+
+default EndMessage = [
+    "Hello [player]!",
+    "Thank you for playing the MetaWare High School Demo!",
+    "This visual novel is a work in progress. The final game may or may not resemble something like what you have just experienced.",
+    "There are many choices you can make. Will you choose to play again and find another ending?",
+    "Until next time!\n-The Creator",
+    "P.S. Yeah sorry this place looks so terrible, that's on me!"
+]
+
+#4f682062 6f792074 68697320 69732061 2066696e 642e
+
+
+default EndMessageMeet = [
+    "Now you will have the opportunity to talk to someone whom you have not had a chance to meet."
+]
+
+#3f3f3f20 57686f3f 3f3f3f3f 3f3f3f3f
+
+
+
+###Config stuff
+
+python:
+    config.sound_sample_rate = 41000
