@@ -104,7 +104,7 @@ label aspen_pissed:
     hide a 
     show a open at move(0.2, 0)
     show c mad fists at shake()
-    ca "EVERYBODY STOP!!!!!!!!!"
+    ca "{shader=jitter:u__jitter=5.0, 5.0}EVERYBODY STOP!!!!!!!!!{/shader}"
     show c sad at stop
     show i long
     show a long

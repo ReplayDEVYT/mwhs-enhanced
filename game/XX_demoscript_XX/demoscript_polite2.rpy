@@ -170,10 +170,11 @@ label polite_isadora_enter:
         show c inv
         show a smile
         a "Oh come on Chris, isn't this the whole point of everything anyway? Besides, wasn't that question super beneficial information?"
-        show a happy
-        a "I certainly think so~ <3"
+        show a happy blush
+        a "{shader=wave}{i}I certainly think so~ <3{/i}{/shader}"
+        show a smile -blush
         show c open
-        c "Oh my god STOP THAT!"
+        c "Oh my god {shader=jitter:u__jitter=1.0, 1.0}STOP THAT!{/shader}"
     else:
         show a ahh
         show c inv
@@ -213,30 +214,36 @@ label polite_isadora_enter:
         show h smirk
         h "hey this is nari were talking about here{w} im sure she can take it"
         show i long
-        i "...is she...{w}taking it?"
+        i "...{w}is she...{w}taking it?"
         show h smile
         h "ur taking it right buddy"
         n "..."
-        n "I'm taking it."
+        show n line
+        extend "I'm taking it."
         show h smirk
         h "see shes taking it"
-        i "...okay..."
+        i "...{w}okay..."
+        show i disappoint
         i "It's hard to tell if Nari takes in much of anything these days."
         show h long
         h "...{w}shes taking it dont worry"
         a "Well anyway, we probably don't have much time. May as well use it doing what matters."
     else:
-        show a crossed long
+        show a crossed ooh
         a "Hey, Isadora said it herself. We don't have much time. May as well use it doing what matters."
     if not IsBadWord(player):
         if (pronoun[0] == "she"):
             show h owopose
-            h "heheheheheheh doing what matters{w} yes please lets \"do it\" as soon as possible"
+            h "heheheheheheh doing what matters{w} yes please {shader=wave}lets \"do it\" as soon as possible{/shader}"
             show h tongue
+            show c sicko
+            c "HOPE!{w} Don't encourage this!"
         else:
             show h owopose
             h "heheheheheheh doing what matters{w} what sort of \"doing\" do you have in mind"
             show h tongue
+            show c sicko
+            c "Hope!"
     if cute == "n":
         show n disappoint
     show a smile
@@ -255,10 +262,10 @@ label polite_isadora_enter:
         else:
             show i crossed long
             i "I don't know...uh...but if we are..."
-            show i sicko blush
-            i "I don't know what that would mean...if [pronoun[0]]..."
+            show i sicko blush at shake(4)
+            i "I don't know what that would mean...{w}{shader=jitter:u__jitter=1, 0.5}{cps=*0.6}if [pronoun[0]]{/cps}{/shader}..."
     
-    show i long
+    show i long at stop
     show c open
     c "No! We most definitely aren't!"
     show a smile
@@ -276,7 +283,7 @@ label polite_isadora_enter:
     show i crossed sad -blush
     i "...I sure hope we aren't some subversive horror game."
     show h derp
-    h "ISADORAS GONNA DIE FIRST"
+    h "{shader=jitter:u__jitter=2, 2}ISADORAS GONNA DIE FIRST{/shader}"
     if cute == "i":
         show i fists open
         i "Wha-? Hey! Are you saying that just because [pronoun[0]]...?!?!?!"
@@ -287,7 +294,7 @@ label polite_isadora_enter:
         i "Wha-? No! You would die first, dingus!"
         show a smile
         a "Hm...{w} yeah Isadora would die first. You kind of fit the archetype."
-    show i wah
+    show i wah at shake(4)
     iw "WHAT ARCHETYPE"
     show c smirk
     c "...sorry Izzy, I kinda have to agree. You're a goner."
@@ -298,8 +305,8 @@ label polite_isadora_enter:
             jump immortality_nobody_gonna_die
         "I agree too. She's as good as dead.":
             jump polite_isadora_gonna_die
-        # "ALL OF YOU ARE GOING TO DIE":
-        #     jump horror_start
+        "ALL OF YOU ARE GOING TO DIE":
+            jump horror_start
 
 label polite_isadora_gonna_die:
     show i omg at shake(40)
