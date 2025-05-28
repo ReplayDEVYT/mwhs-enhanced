@@ -438,7 +438,7 @@ define gui.language = "unicode"
 ## Sreeen Messages #############################################################
 ## Ze messages 4 when the screen say stuff. This is custom.
 
-define gui.MAIN_MENU = _("Are you sure you want to return to the menu? This will destroy the current route.")
+define gui.MAIN_MENU = _("Are you sure you want to return to the menu? This will kill the current route.")
 
 ################################################################################
 ## Mobile devices

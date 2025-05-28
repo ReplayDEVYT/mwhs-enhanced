@@ -308,6 +308,35 @@ label polite_isadora_enter:
         "ALL OF YOU ARE GOING TO DIE":
             jump horror_start
 
+label horror_start:
+    show i omg sweat at shake(20)
+    show a ahh
+    show c smile
+    iw "WHAT!?{w} WE ARE?!???"
+    show a crossed ooh
+    a "Well, Izzy, hold on..{w} Maybe [player] means that we're going to die.. in the future?{w} Like, when we get old?"
+    show i sicko
+    i "HOW DO YOU KNOW?"
+    show i oohh at shake(30)
+    iw "WHAT IF [pronoun[0]!u] MEANT WE'RE GOING TO DIE RIGHT NOW!?"
+    show c sicko
+    c "Izzy, calm down.."
+    c "I'm sure [player] didn't mean it like that.."
+    menu:
+        "Oh, no. I meant it like that. (unfinished)":
+            jump everybody_die_soon
+
+label everybody_die_soon:
+    show c oh
+    show h oh
+    show a oh
+    show i oh -sweat at stop
+    show n line
+    $hardpause(6)
+    show i omg at shake(40)
+    show h sicko sweat
+    a "finish dialogue"
+
 label polite_isadora_gonna_die:
     show i omg at shake(40)
     iw "OH MY GOD WHAT?{w} YOU TOO?!?!?!"
@@ -485,6 +514,9 @@ label polite_isadora_gonna_die:
             "What's mochi?":
                 $mochi_players_idea = False
                 jump whats_mochi
+            "I don't really like mochi.":
+                $mochi_players_idea = True
+                jump hate_mochi
 
 
 label whats_mochi:
@@ -520,6 +552,46 @@ label whats_mochi:
     c "Once again."
     a "...{w}well, let's go before Hope gets too far ahead of us."
     jump going_to_mochi
+
+label hate_mochi:
+    stop music
+    show h line
+    $hardpause(5)
+    play music naristorytime2_donbuyit
+    scene black
+    show bgendnoise at makeitfizz:
+        alpha 0.0
+        linear 60.0 alpha 0.6
+    show h long at move(1.0, 0.0, 0.0, 1.1, 300)
+    h "You.. what?"
+    h "What did I just hear come out of your mouth?"
+    c "Hope.. {nw}{w=0.4}"
+    hide bgblueworld
+    hide black
+    scene
+    show bg school at place_school_bg
+    show c long at move (-0.1, 0.0, 0.0) zorder 3
+    show a long at move(0.2, 0.0, 0.0) zorder 4
+    show h long at move(0.8, 0.0, 0.0) zorder 2
+    show i long at move(0.5, 0.0, 0.0) zorder 5
+    show n line at move(1.1, 0.0, 0.0) zorder 1
+    stop music
+    extend "Hope."
+    c "How do you know they aren't allergic or something?"
+    pause(2.0)
+    i "Yeah, Hope.. Chrissy is right.{w} [pronoun[0]!c] could be allergic."
+    i "You shouldn't be so offended because they do{nw}"
+    play music naristorytime2_donbuyit
+    scene black
+    show bgendnoise at makeitfizz:
+        alpha 0.0
+        linear 60.0 alpha 0.6
+    show h long at move(1.0, 0.0, 0.0, 1.1, 300)
+    h "I don't associate myself with people that hate mochi."
+    h "I'm leaving."
+    show h long at move(3.0, 3.0, 0.0, 1.1, 300)
+    $hardpause(5)
+
 
 
 
